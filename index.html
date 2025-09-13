@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书查找网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="top-header">
+        <div class="container">
+            <div class="header-left">
+                <a href="#" class="register-link">注册</a>
+                <span class="divider">|</span>
+                <a href="#" class="login-link">登录</a>
+            </div>
+            <div class="header-right">
+                <span class="slogan">读书好，好读书，读好书！</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主头部 -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-section">
+                <h1 class="logo">图书查找网站</h1>
+            </div>
+            <div class="user-section">
+                <a href="#" class="user-link">我的账户</a>
+                <a href="#" class="user-link">我的书架</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主导航 -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-item active">首页</a></li>
+                <li><a href="#" class="nav-item">新闻资讯</a></li>
+                <li><a href="#" class="nav-item">每日一读</a></li>
+                <li><a href="#" class="nav-item">国学/古籍</a></li>
+                <li><a href="#" class="nav-item">出版图书</a></li>
+                <li><a href="#" class="nav-item">读书导航</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 分类导航 -->
+    <nav class="category-nav">
+        <div class="container">
+            <div class="category-section">
+                <h3>图书分类</h3>
+                <div class="category-links">
+                    <a href="#" class="category-link" data-category="文学">文学史</a>
+                    <a href="#" class="category-link" data-category="文学">纪实文学</a>
+                    <a href="#" class="category-link" data-category="文学">散文随笔</a>
+                    <a href="#" class="category-link" data-category="文学">世界名著</a>
+                    <a href="#" class="category-link" data-category="文学">外国小说</a>
+                    <a href="#" class="category-link" data-category="文学">言情小说</a>
+                    <a href="#" class="category-link" data-category="文学">历史小说</a>
+                    <a href="#" class="category-link" data-category="文学">当代小说</a>
+                    <a href="#" class="category-link" data-category="文学">网络小说</a>
+                    <a href="#" class="category-link" data-category="文学">青春言情</a>
+                    <a href="#" class="category-link" data-category="历史">人物传记</a>
+                    <a href="#" class="category-link" data-category="艺术">艺术理论</a>
+                    <a href="#" class="category-link" data-category="艺术">书法/篆刻</a>
+                    <a href="#" class="category-link" data-category="艺术">绘画</a>
+                    <a href="#" class="category-link" data-category="艺术">收藏鉴赏</a>
+                    <a href="#" class="category-link" data-category="教育">生活时尚</a>
+                    <a href="#" class="category-link" data-category="教育">社会科学</a>
+                    <a href="#" class="category-link" data-category="教育">法律</a>
+                    <a href="#" class="category-link" data-category="教育">少儿/童书</a>
+                    <a href="#" class="category-link" data-category="教育">人文社科</a>
+                    <a href="#" class="category-link" data-category="历史">历史</a>
+                    <a href="#" class="category-link" data-category="教育">经济管理</a>
+                    <a href="#" class="category-link" data-category="教育">工业技术</a>
+                    <a href="#" class="category-link" data-category="教育">自我实现/励志</a>
+                    <a href="#" class="category-link" data-category="科技">计算机/网络</a>
+                    <a href="#" class="category-link more">更多</a>
+                </div>
+            </div>
+            <div class="classic-section">
+                <h3>国学经典</h3>
+                <div class="classic-links">
+                    <a href="#" class="classic-link" data-title="红楼梦">红楼梦</a>
+                    <a href="#" class="classic-link" data-title="西游记">西游记</a>
+                    <a href="#" class="classic-link" data-title="三国演义">三国演义</a>
+                    <a href="#" class="classic-link" data-title="水浒传">水浒传</a>
+                    <a href="#" class="classic-link" data-title="史记">史记</a>
+                    <a href="#" class="classic-link" data-title="资治通鉴">资治通鉴</a>
+                    <a href="#" class="classic-link" data-title="大学">大学</a>
+                    <a href="#" class="classic-link" data-title="中庸">中庸</a>
+                    <a href="#" class="classic-link" data-title="论语">论语</a>
+                    <a href="#" class="classic-link" data-title="孟子">孟子</a>
+                    <a href="#" class="classic-link" data-title="诗经">诗经</a>
+                    <a href="#" class="classic-link" data-title="尚书">尚书</a>
+                    <a href="#" class="classic-link" data-title="仪礼">仪礼</a>
+                    <a href="#" class="classic-link" data-title="周易">周易</a>
+                    <a href="#" class="classic-link" data-title="春秋左传">春秋左传</a>
+                    <a href="#" class="classic-link" data-title="尔雅">尔雅</a>
+                    <a href="#" class="classic-link" data-title="孝经">孝经</a>
+                    <a href="#" class="classic-link" data-title="国语">国语</a>
+                    <a href="#" class="classic-link" data-title="战国策">战国策</a>
+                    <a href="#" class="classic-link" data-title="老子">老子</a>
+                    <a href="#" class="classic-link" data-title="庄子">庄子</a>
+                    <a href="#" class="classic-link" data-title="孙子兵法">孙子兵法</a>
+                    <a href="#" class="classic-link" data-title="楚辞">楚辞</a>
+                    <a href="#" class="classic-link" data-title="古文观止">古文观止</a>
+                    <a href="#" class="classic-link" data-title="吕氏春秋">吕氏春秋</a>
+                    <a href="#" class="classic-link" data-title="世说新语">世说新语</a>
+                    <a href="#" class="classic-link" data-title="唐诗三百首">唐诗三百首</a>
+                    <a href="#" class="classic-link more">更多</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 搜索区域 -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="输入书名、作者或关键词..." class="search-input">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-filters">
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="">所有分类</option>
+                        <option value="文学">文学</option>
+                        <option value="科技">科技</option>
+                        <option value="历史">历史</option>
+                        <option value="教育">教育</option>
+                        <option value="艺术">艺术</option>
+                    </select>
+                    <select id="sortFilter" class="filter-select">
+                        <option value="title">按书名排序</option>
+                        <option value="author">按作者排序</option>
+                        <option value="year">按年份排序</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- 左侧内容 -->
+                <div class="left-content">
+                    <!-- 搜索结果区域 -->
+                    <section class="search-results">
+                        <div class="results-header">
+                            <h3 id="resultsTitle">搜索结果</h3>
+                            <div class="results-count">
+                                <span id="resultsCount">0</span> 本书
+                            </div>
+                        </div>
+                        <div id="bookGrid" class="book-grid">
+                            <!-- 图书卡片将通过JavaScript动态生成 -->
+                        </div>
+                        <div id="noResults" class="no-results" style="display: none;">
+                            <i class="fas fa-search"></i>
+                            <h4>未找到相关图书</h4>
+                            <p>请尝试使用不同的关键词或调整搜索条件</p>
+                        </div>
+                    </section>
+
+                    <!-- 推荐新书 -->
+                    <section class="recommended-books">
+                        <h3 class="section-title">推荐新书</h3>
+                        <div class="book-list">
+                            <div class="book-item">
+                                <div class="book-number">01</div>
+                                <div class="book-info">
+                                    <h4>苔藓的秘密世界</h4>
+                                    <p>吴鹏程 施定基 著</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-number">02</div>
+                                <div class="book-info">
+                                    <h4>藏品有话说</h4>
+                                    <p>故宫博物院 编</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-number">03</div>
+                                <div class="book-info">
+                                    <h4>等待周末：双休日的起源与意义</h4>
+                                    <p>威托斯·黎辛</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-number">04</div>
+                                <div class="book-info">
+                                    <h4>世界的中国观</h4>
+                                    <p>忻剑飞</p>
+                                </div>
+                            </div>
+                            <div class="book-item">
+                                <div class="book-number">05</div>
+                                <div class="book-info">
+                                    <h4>人类史前史</h4>
+                                    <p>[法] 马克·</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 图书推荐 -->
+                    <section class="book-recommendations">
+                        <h3 class="section-title">图书推荐</h3>
+                        <div class="book-grid-small">
+                            <div class="book-card-small">
+                                <div class="book-number">01</div>
+                                <h4>锦绣青衣</h4>
+                            </div>
+                            <div class="book-card-small">
+                                <div class="book-number">02</div>
+                                <h4>倪亚达</h4>
+                            </div>
+                            <div class="book-card-small">
+                                <div class="book-number">03</div>
+                                <h4>大生意人2</h4>
+                            </div>
+                            <div class="book-card-small">
+                                <div class="book-number">04</div>
+                                <h4>水浒全传（典藏礼盒）</h4>
+                            </div>
+                            <div class="book-card-small">
+                                <div class="book-number">05</div>
+                                <h4>四大名著 西游记 红楼梦 水浒传 三国演义</h4>
+                            </div>
+                            <div class="book-card-small">
+                                <div class="book-number">06</div>
+                                <h4>四大名著绣像（珍藏版）</h4>
+                            </div>
+                            <div class="book-card-small">
+                                <div class="book-number">07</div>
+                                <h4>月落姑苏</h4>
+                            </div>
+                            <div class="book-card-small">
+                                <div class="book-number">08</div>
+                                <h4>家有九凤</h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- 右侧边栏 -->
+                <aside class="sidebar">
+                    <!-- 读书资讯 -->
+                    <section class="news-section">
+                        <h3 class="sidebar-title">读书资讯</h3>
+                        <div class="news-tabs">
+                            <a href="#" class="news-tab active">新闻</a>
+                            <a href="#" class="news-tab">书讯</a>
+                            <a href="#" class="news-tab">书评</a>
+                            <a href="#" class="news-tab">历史</a>
+                            <a href="#" class="news-tab">文化</a>
+                            <a href="#" class="news-tab">艺术</a>
+                            <a href="#" class="news-tab">人物</a>
+                            <a href="#" class="news-tab">书摘</a>
+                        </div>
+                        <div class="news-list">
+                            <div class="news-item">
+                                <h4>东坡之眼：苏轼的艺术精神与绘…</h4>
+                                <p>帝尝诏画工张僧繇写师像。僧繇下笔，辄不自定。师遂以指剺面门，分披出十二面观音。…</p>
+                                <div class="news-meta">
+                                    <span class="likes">0</span>
+                                    <span class="comments">0</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <h4>今天是中元节，看看民间造像里…</h4>
+                                <p>今天是农历七月十五日，中元节，最初为道教所称，佛教称为"盂兰盆节"，民间俗称鬼…</p>
+                                <div class="news-meta">
+                                    <span class="likes">0</span>
+                                    <span class="comments">0</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <h4>著名的梵高博物馆要闭馆了？</h4>
+                                <p>荷兰梵高博物馆拥有全球数量最多、种类最全的梵高作品。澎湃新闻获悉，梵高博物馆近…</p>
+                                <div class="news-meta">
+                                    <span class="likes">0</span>
+                                    <span class="comments">0</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <h4>从张纯如到《南京照相馆》：记…</h4>
+                                <p>2025年9月3日，我们站在了世界反法西斯战争胜利80周年的历史节点上。这是属于庆典与…</p>
+                                <div class="news-meta">
+                                    <span class="likes">4</span>
+                                    <span class="comments">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 国学/古籍 -->
+                    <section class="classic-section">
+                        <h3 class="sidebar-title">国学/古籍</h3>
+                        <div class="classic-list">
+                            <div class="classic-item">
+                                <h4>至顺镇江志</h4>
+                                <p>元·脱因</p>
+                                <span class="read-btn">立即阅读</span>
+                            </div>
+                            <div class="classic-item">
+                                <h4>至大金陵新志</h4>
+                                <p>元·张铉</p>
+                                <span class="read-btn">立即阅读</span>
+                            </div>
+                            <div class="classic-item">
+                                <h4>续修台湾府志</h4>
+                                <p>清·余文仪</p>
+                                <span class="read-btn">立即阅读</span>
+                            </div>
+                            <div class="classic-item">
+                                <h4>福州府志乾隆本</h4>
+                                <p>清·徐景熹</p>
+                                <span class="read-btn">立即阅读</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 阅读排行 -->
+                    <section class="ranking-section">
+                        <h3 class="sidebar-title">阅读排行</h3>
+                        <div class="ranking-list">
+                            <div class="ranking-item">
+                                <div class="rank-number">01</div>
+                                <div class="rank-info">
+                                    <h4>九命奇冤</h4>
+                                    <p>吴研人</p>
+                                </div>
+                            </div>
+                            <div class="ranking-item">
+                                <div class="rank-number">02</div>
+                                <div class="rank-info">
+                                    <h4>恨海</h4>
+                                    <p>吴趼人</p>
+                                </div>
+                            </div>
+                            <div class="ranking-item">
+                                <div class="rank-number">03</div>
+                                <div class="rank-info">
+                                    <h4>二十年目睹之怪现状</h4>
+                                    <p>吴趼人</p>
+                                </div>
+                            </div>
+                            <div class="ranking-item">
+                                <div class="rank-number">04</div>
+                                <div class="rank-info">
+                                    <h4>平山冷燕</h4>
+                                    <p>荻岸散人</p>
+                                </div>
+                            </div>
+                            <div class="ranking-item">
+                                <div class="rank-number">05</div>
+                                <div class="rank-info">
+                                    <h4>三遂平妖传</h4>
+                                    <p>罗贯中</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">关于读书</a>
+                <a href="#">免责声明</a>
+                <a href="#">读书目录</a>
+                <a href="#">联系我们</a>
+            </div>
+            <div class="footer-bottom">
+                <p>web作业</p>
+                <p>2025.9.11</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
